@@ -1,0 +1,20 @@
+From http://shootout.alioth.debian.org/u32/program.php?test=nbody&lang=python3&id=1
+
+
+Each table row shows performance measurements for this Python 3 program with a particular command-line input value N.
+ N 	CPU secs	Elapsed secs	Memory KB	Code B	≈ CPU Load
+500,000	13.53	13.54	4,948	1181	  1% 1% 0% 100%
+5,000,000	121.51	121.54	4,952	1181	  0% 0% 0% 100%
+50,000,000	1,283.54	1,283.85	4,952	1181	  0% 0% 0% 100%
+
+
+MAKE:
+mv nbody.python3 nbody.py
+0.01s to complete and log all make actions
+
+COMMAND LINE:
+/usr/local/src/Python-3.2.1/bin/python3.2 nbody.py 50000000
+
+PROGRAM OUTPUT:
+-0.169075164
+-0.169059907
