@@ -113,6 +113,6 @@ def main(n, ref='sun'):
     report_energy()
 
 if __name__ == '__main__':
-    import profile
+    import cProfile
     args = sys.argv[1]
-    profile.run(main(args))
+    cProfile.run('main(args)')
