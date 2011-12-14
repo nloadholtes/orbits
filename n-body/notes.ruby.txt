@@ -1,0 +1,18 @@
+From http://shootout.alioth.debian.org/u32/benchmark.php?test=nbody&lang=yarv
+
+
+Each table row shows performance measurements for this Ruby 1.9 program with a particular command-line input value N.
+ N 	CPU secs	Elapsed secs	Memory KB	Code B	≈ CPU Load
+500,000	14.02	14.02	3,436	1137	  0% 0% 0% 100%
+5,000,000	141.51	141.56	3,428	1137	  0% 0% 0% 100%
+50,000,000	1,397.94	1,398.38	3,428	1137	  0% 0% 0% 100%
+
+
+Sun, 30 Oct 2011 23:57:44 GMT
+
+COMMAND LINE:
+/usr/local/src/ruby-1.9.3-p0/ruby nbody.yarv-2.yarv 50000000
+
+PROGRAM OUTPUT:
+-0.169075164
+-0.169059907
