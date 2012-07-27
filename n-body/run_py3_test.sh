@@ -1,2 +1,3 @@
-echo `date` >> timings.log
-/usr/bin/time --format=" %U sec" -a -o timings.log python3 nbody.py 50000 >> timings_py3.log
+LOG_FILE=timings_py.log
+echo `date` >> $LOG_FILE
+/usr/bin/time --format=" %U sec" -a -o $LOG_FILE python3 nbody.py 50000 >> $LOG_FILE
