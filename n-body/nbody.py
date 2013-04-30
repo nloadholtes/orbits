@@ -10,7 +10,7 @@ import sys
 
 def combinations(l):
     result = []
-    for x in range(len(l) - 1):
+    for x in xrange(len(l) - 1):
         ls = l[x+1:]
         for y in ls:
             result.append((l[x],y))
@@ -62,7 +62,7 @@ PAIRS = combinations(SYSTEM)
 
 def advance(dt, n, bodies=SYSTEM, pairs=PAIRS):
 
-    for i in range(n):
+    for i in xrange(n):
         for (([x1, y1, z1], v1, m1),
              ([x2, y2, z2], v2, m2)) in pairs:
             dx = x1 - x2
